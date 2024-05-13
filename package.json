@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "villa-adriart",
   "version": "0.1.0",
-  "homepage": "https://enabur.github.io/my-app/",
+  "homepage": "https://enabur.github.io/adriart/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
