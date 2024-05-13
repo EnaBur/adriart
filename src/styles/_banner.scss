@@ -1,0 +1,64 @@
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/banner.jpg");
+    max-height: fit-content;
+    height: 700px;
+    background-position: center center, center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    opacity: .7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        left: 25%;
+        color: white;
+        font-family: 'Baskerville Old Face Bold';
+        font-size: 60px;
+        font-weight: lighter;
+    }
+    h3 {
+        text-align: center;
+        margin-top: 5px;
+        left: 25%;
+        color: white;
+        font-family: 'Josefin Sans Light';
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    button {
+        transform: translate(5%);
+        color: #FFFFFF;
+        background-color: #9abadd;
+        border: 1px solid #9abadd;
+        border-radius: 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        outline: none;
+        //position: absolute;
+        padding: 13px 23px;
+        text-align: center;
+        text-decoration: none;
+        touch-action: manipulation;
+        transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+        user-select: none;
+        -webkit-user-select: none;
+        width: auto;
+
+    }
+}
+
+.buttons button{
+    margin: 5px;
+}
+  

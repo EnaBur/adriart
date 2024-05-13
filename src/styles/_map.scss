@@ -1,0 +1,26 @@
+.mapSection {
+    padding: 10px;
+    display: flex;
+    background-color: #272f31;
+    color: white;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    h2 {
+        font-family: 'Josefin Sans Light';
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border:0;
+    iframe:fullscreen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+}
