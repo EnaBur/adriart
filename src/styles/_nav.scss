@@ -43,5 +43,27 @@ ul {
     li a {
       font-size: 14px;
     }
-    
+  }
+
+  @media (max-width: 680px) {
+    li {
+      display: none;
+    }
+  
+    .open {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .open li a{
+      display: block;
+      float: none;
+    }
+  
+    .nav-mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      width: 100%;
+    }
   }

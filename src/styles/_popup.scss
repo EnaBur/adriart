@@ -8,6 +8,12 @@
     height: 100%;
 }
 
+@media (max-width: 780px) {
+  .popup-content {
+    width: 100%;
+  }
+}
+
 /*
 .form-popup {
     display: none;

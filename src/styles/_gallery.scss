@@ -12,7 +12,6 @@
     h2 {
         font-family: 'Josefin Sans Light';
     }
-    
 }
 
 button {
@@ -38,14 +37,12 @@ button {
     user-select: none;
     -webkit-user-select: none;
     width: auto;
-
 }
 
 .galery-body {
     display: flex;
     width: 80vw;
     background-color: #272f31;
-    
 }
 
 .galery {
@@ -59,7 +56,7 @@ button {
     flex: 0.5;
     margin: 10px;
     position: relative;
-    -webkit-transition: all 700ms ease-in;
+    transition: all 700ms ease-in;
     }
 
 .galery.active {
@@ -131,7 +128,7 @@ button {
 .full-image {
     height:100%;
     margin: 5px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     padding: 10px;
