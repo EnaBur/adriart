@@ -1,0 +1,15 @@
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 680px) {
+    .hamburger {
+        display: flex;
+        color: #FFFFFF;
+        justify-content: flex-end;
+        margin: 10px 20px 0 0;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+  }
