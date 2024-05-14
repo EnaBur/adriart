@@ -12,8 +12,8 @@ const Nav = () => {
   };
 
   return (
-    <div className="nav">
-      <ul>
+    <div>
+      <ul className={hamburgerOpen ? "darken" : ""}>
         <img alt="logo" src={logo}></img>
         <h2>Adriart</h2>
         <div className="hamburger" onClick={toggleHamburger}>
