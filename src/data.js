@@ -16,6 +16,14 @@ import image13 from "./images/image13.jpg";
 import image14 from "./images/image14.jpg";
 import image15 from "./images/image15.jpg";
 import image16 from "./images/image16.jpg";
+import image17 from "./images/image17.jpg";
+import image18 from "./images/image18.jpg";
+import image19 from "./images/image19.jpg";
+import image20 from "./images/image20.jpg";
+import image21 from "./images/image21.jpg";
+import image22 from "./images/image22.jpg";
+import image23 from "./images/image23.jpg";
+import image24 from "./images/image24.jpg";
 
 function imagesExport() {
   return [
@@ -66,6 +74,30 @@ function imagesExport() {
     },
     {
       image: image16,
+    },
+    {
+      image: image17,
+    },
+    {
+      image: image18,
+    },
+    {
+      image: image19,
+    },
+    {
+      image: image20,
+    },
+    {
+      image: image21,
+    },
+    {
+      image: image22,
+    },
+    {
+      image: image23,
+    },
+    {
+      image: image24,
     },
   ];
 }

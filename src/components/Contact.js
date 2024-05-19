@@ -10,11 +10,11 @@ const Contact = () => {
       <div className="emailSection">
         <div className="email">
           <FontAwesomeIcon icon={faEnvelope} />
-          <span> anteantic@gmail.com</span>
+          <span> info@villa-adriart.com</span>
         </div>
         <div className="number">
           <FontAwesomeIcon icon={faMobile} />
-          <span> +385 91 888 8888</span>
+          <span> +385 95 822 1730</span>
         </div>
       </div>
     </div>
