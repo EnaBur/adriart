@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/adriart/static/css/main.fd1d1989.css",
-    "main.js": "/adriart/static/js/main.ade42e0c.js",
+    "main.css": "/adriart/static/css/main.d2ac8d1c.css",
+    "main.js": "/adriart/static/js/main.d9117ba3.js",
     "static/media/image3.jpg": "/adriart/static/media/image3.cd6ee4f95070b99dbad5.jpg",
     "static/media/image7.jpg": "/adriart/static/media/image7.80e39a4b844a43992f28.jpg",
     "static/media/image4.jpg": "/adriart/static/media/image4.be29e3d53ef43fc6a0c3.jpg",
@@ -31,11 +31,11 @@
     "static/media/JosefinSans-Light.ttf": "/adriart/static/media/JosefinSans-Light.c61c964657466399c9d2.ttf",
     "static/media/baskvill.ttf": "/adriart/static/media/baskvill.1b983a8f0d42378ce222.ttf",
     "index.html": "/adriart/index.html",
-    "main.fd1d1989.css.map": "/adriart/static/css/main.fd1d1989.css.map",
-    "main.ade42e0c.js.map": "/adriart/static/js/main.ade42e0c.js.map"
+    "main.d2ac8d1c.css.map": "/adriart/static/css/main.d2ac8d1c.css.map",
+    "main.d9117ba3.js.map": "/adriart/static/js/main.d9117ba3.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd1d1989.css",
-    "static/js/main.ade42e0c.js"
+    "static/css/main.d2ac8d1c.css",
+    "static/js/main.d9117ba3.js"
   ]
 }
