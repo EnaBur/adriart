@@ -1,18 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import { DateRangePicker } from "react-date-range";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
+import { format } from "date-fns";
 
 const Form = ({ setShowForm }) => {
+  const [state, setState] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
+  ]);
+
+  const handleSelect = (ranges) => {
+    console.log(ranges.selection);
+    setState([ranges.selection]);
+  };
+
   const closeForm = () => {
     setShowForm(false);
   };
 
-  const [result, setResult] = React.useState("");
+  const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", process.env.ACCESS_KEY);
+    formData.append("access_key", process.env.REACT_APP_ACCESS_KEY);
+
+    // Format dates to DD-MM-YYYY
+    const formattedStartDate = format(state[0].startDate, "dd-MM-yyyy");
+    const formattedEndDate = format(state[0].endDate, "dd-MM-yyyy");
+
+    formData.append("startDate", formattedStartDate);
+    formData.append("endDate", formattedEndDate);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -41,7 +65,11 @@ const Form = ({ setShowForm }) => {
         className="form-container"
       >
         <h1>BOOK VILLA ADRIART</h1>
-        <input type="hidden" name="access_key" value={process.env.ACCESS_KEY} />
+        <input
+          type="hidden"
+          name="access_key"
+          value={process.env.REACT_APP_ACCESS_KEY}
+        />
         <label htmlFor="email">
           <b>Email</b>
         </label>
@@ -70,20 +98,25 @@ const Form = ({ setShowForm }) => {
           <b>Date</b>
         </label>
         <br />
-        <input
-          type="date"
-          className="input-form"
-          placeholder="Choose date"
-          name="date"
-          required
-        />
+        <div>
+          <DateRangePicker
+            ranges={state}
+            onChange={handleSelect}
+            showSelectionPreview={true}
+            moveRangeOnFirstSelection={false}
+            months={2}
+            direction="horizontal"
+            preventSnapRefocus={true}
+            calendarFocus="forwards"
+            showDateDisplay={false}
+          />
+        </div>
         <br />
         <label htmlFor="message">
           <b>Leave a message for us</b>
         </label>
         <br />
-        <input
-          type="textarea"
+        <textarea
           placeholder="Leave a message for us"
           className="input-form"
           name="message"
@@ -101,7 +134,6 @@ const Form = ({ setShowForm }) => {
           name="number"
           required
         />
-
         <button type="submit" className="btn submit">
           Submit
         </button>
