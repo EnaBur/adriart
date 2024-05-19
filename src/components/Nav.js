@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Hamburger from "./Hamburger";
@@ -7,9 +7,24 @@ const Nav = () => {
   const logo = require("../images/Adriart_negativ_bijeli.png");
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
-  const toggleHamburger = () => {
+  const toggleHamburger = (e) => {
+    e.stopPropagation();
     setHamburgerOpen(!hamburgerOpen);
   };
+
+  useEffect(() => {
+    const handleDocumentClick = () => {
+      if (hamburgerOpen) {
+        setHamburgerOpen(false);
+      }
+    };
+
+    document.body.addEventListener("click", handleDocumentClick);
+
+    return () => {
+      document.body.removeEventListener("click", handleDocumentClick);
+    };
+  }, [hamburgerOpen]);
 
   return (
     <div>
