@@ -18,7 +18,7 @@
     height: max-content;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    width: 80%;
+    width: 70%;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -76,3 +76,10 @@
   .rdrDefinedRangesWrapper {
     display: none;
   }
+.date-picker-div {
+  display: flex;
+  align-self: center;
+}
+.form-container input[type=date], .form-container input[type=date] {
+  width: 45%;
+}

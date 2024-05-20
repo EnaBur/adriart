@@ -1,28 +1,20 @@
 import React, { useState } from "react";
-import { DateRangePicker } from "react-date-range";
-import "react-date-range/dist/styles.css";
-import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
 
 const Form = ({ setShowForm }) => {
-  const [state, setState] = useState([
-    {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  ]);
+  const [result, setResult] = useState("");
+  const [dates, setDates] = useState({ startDate: null, endDate: null });
 
-  const handleSelect = (ranges) => {
-    console.log(ranges.selection);
-    setState([ranges.selection]);
-  };
+  const formattedStartDate = dates.startDate
+    ? format(dates.startDate, "dd-mm-yyyy")
+    : "";
+  const formattedEndDate = dates.endDate
+    ? format(dates.endDate, "dd-mm-yyyy")
+    : "";
 
   const closeForm = () => {
     setShowForm(false);
   };
-
-  const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -30,13 +22,8 @@ const Form = ({ setShowForm }) => {
     const formData = new FormData(event.target);
 
     formData.append("access_key", process.env.REACT_APP_ACCESS_KEY);
-
-    // Format dates to DD-MM-YYYY
-    const formattedStartDate = format(state[0].startDate, "dd-MM-yyyy");
-    const formattedEndDate = format(state[0].endDate, "dd-MM-yyyy");
-
-    formData.append("startDate", formattedStartDate);
-    formData.append("endDate", formattedEndDate);
+    formData.append("formattedStartDate", formattedStartDate);
+    formData.append("formattedEndDate", formattedEndDate);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -53,6 +40,14 @@ const Form = ({ setShowForm }) => {
       console.log("Error", data);
       setResult(data.message);
     }
+  };
+
+  const handleDateChange = (e) => {
+    const { name, value } = e.target;
+    setDates((prevDates) => ({
+      ...prevDates,
+      [name]: new Date(value),
+    }));
   };
 
   return (
@@ -94,21 +89,31 @@ const Form = ({ setShowForm }) => {
           required
         />
         <br />
-        <label htmlFor="date">
-          <b>Date</b>
+        <label htmlFor="checkin_date" className="dateLabelCheckIn">
+          <b>Check-in Date</b>
         </label>
         <br />
-        <div>
-          <DateRangePicker
-            ranges={state}
-            onChange={handleSelect}
-            showSelectionPreview={true}
-            moveRangeOnFirstSelection={false}
-            months={2}
-            direction="horizontal"
-            preventSnapRefocus={true}
-            calendarFocus="forwards"
-            showDateDisplay={false}
+        <div className="date-calendar-div">
+          <input
+            type="date"
+            className="input-form"
+            name="startDate"
+            onChange={handleDateChange}
+            required
+          />
+        </div>
+        <br />
+        <label htmlFor="checkout_date" className="dateLabelCheckOut">
+          <b>Check-out Date</b>
+        </label>
+        <br />
+        <div className="date-calendar-div">
+          <input
+            type="date"
+            className="input-form"
+            name="endDate"
+            onChange={handleDateChange}
+            required
           />
         </div>
         <br />
