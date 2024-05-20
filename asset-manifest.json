@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/adriart/static/css/main.d2ac8d1c.css",
-    "main.js": "/adriart/static/js/main.d9117ba3.js",
+    "main.css": "/adriart/static/css/main.2135929b.css",
+    "main.js": "/adriart/static/js/main.5945b3cd.js",
     "static/media/image3.jpg": "/adriart/static/media/image3.cd6ee4f95070b99dbad5.jpg",
-    "static/media/image7.jpg": "/adriart/static/media/image7.80e39a4b844a43992f28.jpg",
-    "static/media/image4.jpg": "/adriart/static/media/image4.be29e3d53ef43fc6a0c3.jpg",
+    "static/media/image9.jpg": "/adriart/static/media/image9.80e39a4b844a43992f28.jpg",
+    "static/media/image17.jpg": "/adriart/static/media/image17.be29e3d53ef43fc6a0c3.jpg",
     "static/media/banner.jpg": "/adriart/static/media/banner.93f6da04b945ed417ef5.jpg",
     "static/media/image2.jpg": "/adriart/static/media/image2.93f6da04b945ed417ef5.jpg",
     "static/media/image1.jpg": "/adriart/static/media/image1.a101444da8172145071d.jpg",
     "static/media/image15.jpg": "/adriart/static/media/image15.abdd910691f12c8f928d.jpg",
     "static/media/image13.jpg": "/adriart/static/media/image13.788292d6dbb7f7a85252.jpg",
-    "static/media/image9.jpg": "/adriart/static/media/image9.d1ade860e83d1769ad59.jpg",
-    "static/media/image6.jpg": "/adriart/static/media/image6.09701f1078c4878286a9.jpg",
-    "static/media/image23.jpg": "/adriart/static/media/image23.95fd756206af83e3e75d.jpg",
+    "static/media/image6.jpg": "/adriart/static/media/image6.d1ade860e83d1769ad59.jpg",
+    "static/media/image21.jpg": "/adriart/static/media/image21.09701f1078c4878286a9.jpg",
+    "static/media/image7.jpg": "/adriart/static/media/image7.95fd756206af83e3e75d.jpg",
     "static/media/image11.jpg": "/adriart/static/media/image11.da20e444de8c0a6cb8ab.jpg",
     "static/media/image12.jpg": "/adriart/static/media/image12.6ea85ca38f23401af14f.jpg",
     "static/media/image24.jpg": "/adriart/static/media/image24.3c73a56fbc39752c06ad.jpg",
@@ -20,22 +20,22 @@
     "static/media/image10.jpg": "/adriart/static/media/image10.30ff9a424376e31c5fde.jpg",
     "static/media/image8.jpg": "/adriart/static/media/image8.0fbda777940458671e1c.jpg",
     "static/media/image14.jpg": "/adriart/static/media/image14.c7534556a27f4d61d0d9.jpg",
-    "static/media/image21.jpg": "/adriart/static/media/image21.b499c36de4db2898c3ab.jpg",
+    "static/media/image23.jpg": "/adriart/static/media/image23.b499c36de4db2898c3ab.jpg",
     "static/media/image20.jpg": "/adriart/static/media/image20.ef52abe00ffd7897b603.jpg",
     "static/media/image19.jpg": "/adriart/static/media/image19.00ac9666c9147578a6a1.jpg",
     "static/media/image18.jpg": "/adriart/static/media/image18.008859e87c64fa704304.jpg",
     "static/media/image22.jpg": "/adriart/static/media/image22.1602bde3a0c62c99ac2e.jpg",
-    "static/media/image17.jpg": "/adriart/static/media/image17.28a4f0bd0c27f8736139.jpg",
+    "static/media/image4.jpg": "/adriart/static/media/image4.28a4f0bd0c27f8736139.jpg",
     "static/media/image16.jpg": "/adriart/static/media/image16.14d3e9a24f8642c24738.jpg",
     "static/media/Adriart_negativ_bijeli.png": "/adriart/static/media/Adriart_negativ_bijeli.adc4aca183d0a385dd6e.png",
     "static/media/JosefinSans-Light.ttf": "/adriart/static/media/JosefinSans-Light.c61c964657466399c9d2.ttf",
     "static/media/baskvill.ttf": "/adriart/static/media/baskvill.1b983a8f0d42378ce222.ttf",
     "index.html": "/adriart/index.html",
-    "main.d2ac8d1c.css.map": "/adriart/static/css/main.d2ac8d1c.css.map",
-    "main.d9117ba3.js.map": "/adriart/static/js/main.d9117ba3.js.map"
+    "main.2135929b.css.map": "/adriart/static/css/main.2135929b.css.map",
+    "main.5945b3cd.js.map": "/adriart/static/js/main.5945b3cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2ac8d1c.css",
-    "static/js/main.d9117ba3.js"
+    "static/css/main.2135929b.css",
+    "static/js/main.5945b3cd.js"
   ]
 }
