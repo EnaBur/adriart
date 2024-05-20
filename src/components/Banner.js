@@ -10,7 +10,7 @@ const Banner = ({ setShowForm }) => {
   const scrollToForm = () => {
     const formElement = document.getElementById("formScroll");
     if (formElement) {
-      formElement.scrollIntoView({ behavior: "smooth", block: "center" });
+      formElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 

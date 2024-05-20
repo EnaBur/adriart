@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+
 import Hamburger from "./Hamburger";
 
 const Nav = () => {
@@ -51,6 +53,11 @@ const Nav = () => {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faFacebook} />
+            </a>
+          </li>
+          <li className={hamburgerOpen ? "open" : ""}>
+            <a href="#map">
+              <FontAwesomeIcon icon={faLocationDot} />
             </a>
           </li>
           <li className={hamburgerOpen ? "open" : ""}>
