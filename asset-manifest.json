@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/adriart/static/css/main.2135929b.css",
-    "main.js": "/adriart/static/js/main.5945b3cd.js",
+    "main.js": "/adriart/static/js/main.c9eb1e3a.js",
     "static/media/image3.jpg": "/adriart/static/media/image3.cd6ee4f95070b99dbad5.jpg",
     "static/media/image9.jpg": "/adriart/static/media/image9.80e39a4b844a43992f28.jpg",
     "static/media/image17.jpg": "/adriart/static/media/image17.be29e3d53ef43fc6a0c3.jpg",
@@ -32,10 +32,10 @@
     "static/media/baskvill.ttf": "/adriart/static/media/baskvill.1b983a8f0d42378ce222.ttf",
     "index.html": "/adriart/index.html",
     "main.2135929b.css.map": "/adriart/static/css/main.2135929b.css.map",
-    "main.5945b3cd.js.map": "/adriart/static/js/main.5945b3cd.js.map"
+    "main.c9eb1e3a.js.map": "/adriart/static/js/main.c9eb1e3a.js.map"
   },
   "entrypoints": [
     "static/css/main.2135929b.css",
-    "static/js/main.5945b3cd.js"
+    "static/js/main.c9eb1e3a.js"
   ]
 }
