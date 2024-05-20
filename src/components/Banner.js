@@ -4,14 +4,6 @@ import Nav from "./Nav";
 const Banner = ({ setShowForm }) => {
   const handleForm = () => {
     setShowForm(true);
-    scrollToForm();
-  };
-
-  const scrollToForm = () => {
-    const formElement = document.getElementById("formScroll");
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
   };
 
   return (
