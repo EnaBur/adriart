@@ -102,6 +102,7 @@ const Form = ({ setShowForm }) => {
           onChange={handleChange}
           required
         />
+
         <br />
         <label htmlFor="name">
           <b>Name and Surname</b>
@@ -116,6 +117,7 @@ const Form = ({ setShowForm }) => {
           onChange={handleChange}
           required
         />
+        <input type="hidden" name="subject" value={`$name`} />
         <br />
         <label htmlFor="checkin_date" className="dateLabelCheckIn">
           <b>Check-in Date</b>
