@@ -49,6 +49,7 @@ const Form = ({ setShowForm }) => {
     );
     formData.append("message", formState.message);
     formData.append("number", formState.number);
+    formData.append("subject", `Booking request from ${formState.name}`);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -79,7 +80,6 @@ const Form = ({ setShowForm }) => {
       <form
         id="form"
         onSubmit={onSubmit}
-        action=""
         method="POST"
         className="form-container"
       >
@@ -102,7 +102,6 @@ const Form = ({ setShowForm }) => {
           onChange={handleChange}
           required
         />
-
         <br />
         <label htmlFor="name">
           <b>Name and Surname</b>
@@ -117,7 +116,11 @@ const Form = ({ setShowForm }) => {
           onChange={handleChange}
           required
         />
-        <input type="hidden" name="subject" value={`$name`} />
+        <input
+          type="hidden"
+          name="subject"
+          value={`Booking request from ${formState.name}`}
+        />
         <br />
         <label htmlFor="checkin_date" className="dateLabelCheckIn">
           <b>Check-in Date</b>
