@@ -1,7 +1,7 @@
 {
   "name": "villa-adriart",
   "version": "0.1.0",
-  "homepage": "https://enabur.github.io/adriart/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.24.6",
