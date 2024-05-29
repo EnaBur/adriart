@@ -1,85 +1,87 @@
 .formDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans Light';
-    span {
-      color: #ffffff;
-    }
-    h1{ 
-      font-size: 24px;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans Light";
+  span {
+    color: #ffffff;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
 
 .form-container {
-    padding: 15px;
-    background-color: #272f31;
-    height: max-content;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    width: 70%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h1 {
-      align-content: center;
-      margin: 0 auto;
-    }
-    label {
-      align-content: flex-start;
-      padding: 15px;
-    }
-    
+  padding: 15px;
+  background-color: #272f31;
+  height: max-content;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  width: 70%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    align-content: center;
+    margin: 0 auto;
   }
+  label {
+    align-content: flex-start;
+    padding: 15px;
+  }
+}
 
-  .input-form {
-    padding: 15px;
-    border: none;
-    background: #f1f1f1;
-    color: #272f31b5;
-  }
+.input-form {
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+  color: #272f31b5;
+  border-radius: 5px;
+}
 
 .input-form:focus {
-    background-color: #ddd;
-    outline: none;
+  background-color: #ddd;
+  outline: none;
 }
-  
-  .form-container .btn {
-    background-color: #9abadd;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 90%;
-    opacity: 0.8;
-  }
-  
-  .form-container .cancel {
-    background-color: #c77b2f;
-    margin: 0px 0px 22px 0px;
-  }
-  
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
 
-  .form-container .submit {
-    margin: 25px 0px 22px 0px;
-  }
+.form-container .btn {
+  background-color: #9abadd;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  opacity: 0.8;
+}
 
-  .date-select {
-    padding: 40px;
-  }
+.form-container .cancel {
+  background-color: #c77b2f;
+  margin: 0px 0px 22px 0px;
+}
 
-  .rdrDefinedRangesWrapper {
-    display: none;
-  }
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.form-container .submit {
+  margin: 25px 0px 22px 0px;
+}
+
+.date-select {
+  padding: 40px;
+}
+
+.rdrDefinedRangesWrapper {
+  display: none;
+}
 .date-picker-div {
   display: flex;
   align-self: center;
 }
-.form-container input[type=date], .form-container input[type=date] {
+.form-container input[type="date"],
+.form-container input[type="date"] {
   width: 45%;
 }
