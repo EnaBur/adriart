@@ -52,7 +52,7 @@ const Form = ({ setShowForm }) => {
     formData.append("subject", `Booking request from ${formState.name}`);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch(process.env.REACT_APP_WEB3FORMS_ENDPOINT, {
         method: "POST",
         body: formData,
       });
