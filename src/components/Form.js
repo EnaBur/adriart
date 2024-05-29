@@ -95,6 +95,7 @@ const Form = ({ setShowForm }) => {
           name="access_key"
           value={process.env.REACT_APP_ACCESS_KEY}
         />
+        <p>{process.env.REACT_APP_TEST}</p>
         <label htmlFor="email">
           <b>Email</b>
         </label>
