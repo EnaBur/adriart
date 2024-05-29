@@ -28,10 +28,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' maps.googleapis.com; style-src 'self' maps.googleapis.com;"
+      content="default-src 'self'; script-src 'self' maps.googleapis.com; style-src 'self' 'nonce-uniqueNonce123' maps.googleapis.com; frame-src 'self' https://www.google.com;"
     />
 
     <title>Rural Villa Adriart</title>
+    <style nonce="uniqueNonce123">
+      body {
+        font-family: "Josefin Sans Light";
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
