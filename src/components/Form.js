@@ -51,27 +51,33 @@ const Form = ({ setShowForm }) => {
     formData.append("number", formState.number);
     formData.append("subject", `Booking request from ${formState.name}`);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      setFormState({
-        email: "",
-        name: "",
-        checkin_date: "",
-        checkout_date: "",
-        message: "",
-        number: "",
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
       });
-      setShowForm(false);
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+
+      const data = await response.json();
+      console.log("Response data:", data);
+
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        setFormState({
+          email: "",
+          name: "",
+          checkin_date: "",
+          checkout_date: "",
+          message: "",
+          number: "",
+        });
+        setShowForm(false);
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setResult("There was an error submitting the form.");
     }
   };
 
@@ -95,6 +101,7 @@ const Form = ({ setShowForm }) => {
         <br />
         <input
           type="email"
+          id="email"
           className="input-form"
           placeholder="Enter Email"
           name="email"
@@ -109,6 +116,7 @@ const Form = ({ setShowForm }) => {
         <br />
         <input
           type="text"
+          id="name"
           placeholder="Name and Surname"
           className="input-form"
           name="name"
@@ -129,6 +137,7 @@ const Form = ({ setShowForm }) => {
         <div className="date-calendar-div">
           <input
             type="date"
+            id="checkin_date"
             className="input-form"
             name="checkin_date"
             value={formState.checkin_date}
@@ -144,6 +153,7 @@ const Form = ({ setShowForm }) => {
         <div className="date-calendar-div">
           <input
             type="date"
+            id="checkout_date"
             className="input-form"
             name="checkout_date"
             value={formState.checkout_date}
@@ -157,6 +167,7 @@ const Form = ({ setShowForm }) => {
         </label>
         <br />
         <textarea
+          id="message"
           placeholder="Leave a message for us"
           className="input-form"
           name="message"
@@ -171,6 +182,7 @@ const Form = ({ setShowForm }) => {
         <br />
         <input
           type="number"
+          id="number"
           className="input-form"
           name="number"
           value={formState.number}
