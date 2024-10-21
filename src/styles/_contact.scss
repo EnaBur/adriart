@@ -36,7 +36,7 @@
   }
   .email {
     display: flex;
-    justify-content: space-around;
+    gap: 15px;
     width: 25%;
   }
   .number {
@@ -59,14 +59,10 @@
       justify-content: center;
     }
     .email {
-      width: 100%;
       width: 80%;
       gap: 5px;
       margin-right: 0px;
       justify-content: center;
-      svg {
-        width: 25%;
-      }
     }
   }
 }

@@ -1,21 +1,17 @@
 body {
-    margin: 0 auto;
-    background-color: #272f31;
-
-    @font-face {
-        font-family: 'Baskerville Old Face Bold';
-        src: url('./fonts/baskvill.ttf') format('truetype');
-        /* Add other font properties here if needed */
-    }
-    @font-face {
-        font-family: 'Josefin Sans Light';
-        src: url('./fonts/JosefinSans-Light.ttf') format('truetype');
-        /* Add other font properties here if needed */
-    }
-
+  margin: 0 auto;
+  background: #546752;
+  @font-face {
+    font-family: "Baskerville Old Face Bold";
+    src: url("./fonts/baskvill.ttf") format("truetype");
+    /* Add other font properties here if needed */
+  }
+  @font-face {
+    font-family: "Josefin Sans Light";
+    src: url("./fonts/JosefinSans-Light.ttf") format("truetype");
+    /* Add other font properties here if needed */
+  }
 }
-
-
 
 @import "./banner";
 @import "./gallery";
@@ -27,3 +23,4 @@ body {
 @import "./map";
 @import "./hamburger";
 @import "./form";
+@import "./video";

@@ -1,5 +1,4 @@
 .gallerySection {
-  background-color: #272f31;
   display: flex;
   justify-content: center;
   color: white;
@@ -18,8 +17,8 @@
 button {
   transform: translate(5%);
   color: #ffffff;
-  background-color: #9abadd;
-  border: 1px solid #9abadd;
+  background-color: #e8e909;
+  border: 1px solid #e8e909;
   border-radius: 8px;
   box-sizing: border-box;
   cursor: pointer;
@@ -43,7 +42,6 @@ button {
 .galery-body {
   display: flex;
   width: 80vw;
-  background-color: #272f31;
 }
 
 .galery {
