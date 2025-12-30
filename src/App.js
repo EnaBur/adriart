@@ -19,7 +19,6 @@ function App() {
       <About />
       <Gallery />
       <Map />
-      <Video />
       <Contact />
       {showForm && <Form setShowForm={setShowForm} />}
       <Footer />
