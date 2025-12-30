@@ -8,6 +8,7 @@ const Video = () => {
     <div className="videoSection" id="video">
       <h2>CHECK OUR VIDEOS FOR A BETTER EXPERIENCE</h2>
       <video controls width="70%" className="videoPlayer" src={video}></video>
+      <br/>
       <video controls width="70%" className="videoPlayer" src={video2}></video>
     </div>
   );

@@ -7,7 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Map from "./components/Map";
 import Form from "./components/Form";
-//import Video from "./components/Video";
+import Video from "./components/Video";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <About />
       <Gallery />
       <Map />
-      
+      <Video />
       <Contact />
       {showForm && <Form setShowForm={setShowForm} />}
       <Footer />
