@@ -12,7 +12,7 @@ const Banner = ({ setShowForm }) => {
       <div className="banner">
         <h3>WELCOME TO</h3>
         <h1>RURAL VILLA ADRIART</h1>
-        <button className="button-23" onClick={handleForm}>
+        <button className="" onClick={handleForm}>
           BOOK NOW
         </button>
       </div>

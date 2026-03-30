@@ -12,7 +12,7 @@ const About = () => {
       </p>
       <p>
         Distinctively equipped, with its 200 m2 indoor and 3000m2 outdoor space
-        villa offers you four bedrooms and three bathrooms, spacious living room
+        villa offers you four bedrooms and four bathrooms, spacious living room
         with panoramic view, sauna, indoor play room with darts and billiard,
         vegetable garden, traditional dalmatian taverna with barbecue amenities
         next to the heated swimming pool, 200m2 large football and tennis court.
