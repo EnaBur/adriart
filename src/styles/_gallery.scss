@@ -56,13 +56,34 @@ button {
   margin: 10px;
   position: relative;
   transition: all 700ms ease-in;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all 700ms ease-in;
 }
 
 .galery.active {
   flex: 5;
+  flex: 5;
 }
 
 .gallery-popup {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -78,9 +99,20 @@ button {
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
 }
 
+
 .gallery-full-image {
+  height: 20vh;
+  margin: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  cursor: pointer;
   height: 20vh;
   margin: 5px;
   background-size: cover;
@@ -92,9 +124,33 @@ button {
 
 .gallery-full-image.active {
   flex: 5;
+  flex: 5;
 }
 
 .slideshow-popup {
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  :first-child {
+    justify-content: flex-end;
+  }
+  :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    img {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 10px;
+    }
+  }
   margin: auto;
   width: 100%;
   padding: 5px;
@@ -125,6 +181,10 @@ button {
   width: 100%;
   justify-content: center;
   align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .full-image {
@@ -134,10 +194,18 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   padding: 10px;
+  height: 100%;
+  margin: 5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
 }
 .close {
   display: flex;
+  display: flex;
 }
+
 
 @media (max-width: 780px) {
   .galery-body {
@@ -160,4 +228,25 @@ button {
   .galery:nth-child(6) {
     display: none;
   }
+  .galery-body {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+  }
+  .galery {
+    height: 20vh;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 0px;
+  }
+  .galery:nth-child(5) {
+    display: none;
+  }
+  .galery:nth-child(6) {
+    display: none;
+  }
 }
+
