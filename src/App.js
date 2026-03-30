@@ -7,6 +7,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Map from "./components/Map";
 import Form from "./components/Form";
+import Video from "./components/Video";
+
 
 function App() {
   const [showForm, setShowForm] = useState(false);

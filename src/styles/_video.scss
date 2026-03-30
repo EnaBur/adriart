@@ -1,0 +1,20 @@
+.videoSection {
+    padding: 10px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    h2 {
+      font-family: "Josefin Sans Light";
+    }
+    video {
+        border-radius: 45px;
+    }
+  }
+  
+
+  

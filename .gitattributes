@@ -1,0 +1,4 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/*.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/VillaAdriart_v1.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/VillaAdriart_v2.mp4 filter=lfs diff=lfs merge=lfs -text
