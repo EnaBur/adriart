@@ -10,17 +10,6 @@
   h1 {
     font-size: 24px;
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Josefin Sans Light";
-  span {
-    color: #ffffff;
-  }
-  h1 {
-    font-size: 24px;
-  }
 }
 
 .form-container {
@@ -51,17 +40,8 @@
   color: #272f31b5;
   border-radius: 5px;
 }
-.input-form {
-  padding: 15px;
-  border: none;
-  background: #f1f1f1;
-  color: #272f31b5;
-  border-radius: 5px;
-}
 
 .input-form:focus {
-  background-color: #ddd;
-  outline: none;
   background-color: #ddd;
   outline: none;
 }
@@ -89,13 +69,7 @@
 .form-container .submit {
   margin: 25px 0px 22px 0px;
 }
-.form-container .submit {
-  margin: 25px 0px 22px 0px;
-}
 
-.date-select {
-  padding: 40px;
-}
 .date-select {
   padding: 40px;
 }
@@ -110,11 +84,6 @@
   display: flex;
   align-self: center;
 }
-.form-container input[type="date"],
-.form-container input[type="date"] {
-  width: 45%;
-}
-.form-container input[type="date"],
 .form-container input[type="date"] {
   width: 45%;
 }
